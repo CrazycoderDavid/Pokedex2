@@ -35,7 +35,7 @@ class PokemonDetailVC: UIViewController {
         pokemon.downloadPokemonDetails { () -> () in
         //this will be called after download is done
             self.updateUI()
-        
+        print("Did we get here")
         }
     }
     
@@ -54,10 +54,11 @@ class PokemonDetailVC: UIViewController {
         }else {
             nextEvoImg.hidden = false
             nextEvoImg.image = UIImage(named: pokemon.nextEvolutionID)
-            var str = "Next Evolution: \(pokemon.nextEvolutionText)"
+            var str = "Next Evolution: \(pokemon.nextEvolutionTxt)"
             
             if pokemon.nextEvolutionLvl != "" {
-                    str += "-LVL \(pokemon.nextEvolutionLvl)"
+                    str += " - LVL \(pokemon.nextEvolutionLvl)"
+                print(" Poke lvl reached")
             }
             
         }

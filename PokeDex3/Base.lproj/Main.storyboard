@@ -418,7 +418,7 @@
                                 </variation>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XOA-D0-4fd">
-                                <rect key="frame" x="0.0" y="436" width="350" height="134"/>
+                                <rect key="frame" x="125" y="446" width="350" height="134"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="6Dk-IT-X3D">
                                         <rect key="frame" x="0.0" y="0.0" width="175" height="134"/>
@@ -463,26 +463,27 @@
                             <constraint firstItem="UoR-lS-tlE" firstAttribute="top" secondItem="Arm-mj-ebZ" secondAttribute="top" id="0Qw-Ks-8af"/>
                             <constraint firstItem="XOA-D0-4fd" firstAttribute="leading" secondItem="Arm-mj-ebZ" secondAttribute="leadingMargin" id="0u2-ch-4JO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XOA-D0-4fd" secondAttribute="trailing" id="3Yg-hj-DxL"/>
+                            <constraint firstItem="XOA-D0-4fd" firstAttribute="top" secondItem="E61-bM-6tA" secondAttribute="bottom" constant="18" id="3x9-Oh-91C"/>
                             <constraint firstItem="qf6-vS-QPe" firstAttribute="trailing" secondItem="Arm-mj-ebZ" secondAttribute="trailingMargin" id="4MM-O5-cdE"/>
                             <constraint firstItem="E61-bM-6tA" firstAttribute="leading" secondItem="Arm-mj-ebZ" secondAttribute="leading" id="5x3-FV-OG8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qf6-vS-QPe" secondAttribute="trailing" id="6DM-ET-bO7"/>
                             <constraint firstItem="E61-bM-6tA" firstAttribute="centerX" secondItem="Arm-mj-ebZ" secondAttribute="centerX" id="Asc-VU-puv"/>
-                            <constraint firstItem="XOA-D0-4fd" firstAttribute="top" secondItem="Arm-mj-ebZ" secondAttribute="top" constant="436" id="EgJ-hL-l2w"/>
                             <constraint firstItem="qf6-vS-QPe" firstAttribute="leading" secondItem="Arm-mj-ebZ" secondAttribute="leadingMargin" id="Gxf-5E-i4m"/>
                             <constraint firstAttribute="trailing" secondItem="E61-bM-6tA" secondAttribute="trailing" id="HPq-mY-u1O"/>
                             <constraint firstItem="UoR-lS-tlE" firstAttribute="leading" secondItem="Arm-mj-ebZ" secondAttribute="leading" id="Hqz-77-3lI"/>
+                            <constraint firstItem="XOA-D0-4fd" firstAttribute="top" secondItem="Arm-mj-ebZ" secondAttribute="top" constant="446" id="L8y-eo-p0y"/>
                             <constraint firstItem="qf6-vS-QPe" firstAttribute="top" secondItem="UoR-lS-tlE" secondAttribute="bottom" constant="20" id="MDv-pd-I9p"/>
                             <constraint firstItem="qf6-vS-QPe" firstAttribute="top" secondItem="UoR-lS-tlE" secondAttribute="bottom" constant="20" id="OH7-yx-sdE"/>
                             <constraint firstItem="E61-bM-6tA" firstAttribute="top" secondItem="qf6-vS-QPe" secondAttribute="bottom" constant="20" id="ORv-6c-kow"/>
+                            <constraint firstItem="XOA-D0-4fd" firstAttribute="centerX" secondItem="E61-bM-6tA" secondAttribute="centerX" id="RTb-rJ-Jnp"/>
                             <constraint firstItem="XOA-D0-4fd" firstAttribute="top" secondItem="E61-bM-6tA" secondAttribute="bottom" constant="15" id="RUD-Sl-Wai"/>
                             <constraint firstItem="qf6-vS-QPe" firstAttribute="leading" secondItem="Arm-mj-ebZ" secondAttribute="leadingMargin" id="UBP-wA-B53"/>
                             <constraint firstItem="E61-bM-6tA" firstAttribute="top" secondItem="qf6-vS-QPe" secondAttribute="bottom" constant="20" id="VdI-Ao-MEJ"/>
                             <constraint firstItem="E61-bM-6tA" firstAttribute="top" secondItem="qf6-vS-QPe" secondAttribute="bottom" constant="20" id="VwJ-q4-Oj9"/>
-                            <constraint firstItem="XOA-D0-4fd" firstAttribute="leading" secondItem="E61-bM-6tA" secondAttribute="leading" id="X3Z-Or-boj"/>
                             <constraint firstAttribute="trailing" secondItem="UoR-lS-tlE" secondAttribute="trailing" id="X6E-g9-Gb6"/>
                             <constraint firstItem="E61-bM-6tA" firstAttribute="top" secondItem="qf6-vS-QPe" secondAttribute="bottom" constant="20" id="akX-2m-Dzo"/>
                             <constraint firstAttribute="trailing" secondItem="E61-bM-6tA" secondAttribute="trailing" id="bSh-hN-43H"/>
-                            <constraint firstItem="NiW-ZH-1dF" firstAttribute="top" secondItem="XOA-D0-4fd" secondAttribute="bottom" constant="30" id="gLU-Os-3Gg"/>
+                            <constraint firstAttribute="bottom" secondItem="XOA-D0-4fd" secondAttribute="bottom" constant="20" symbolic="YES" id="dr4-XC-xur"/>
                             <constraint firstItem="E61-bM-6tA" firstAttribute="leading" secondItem="Arm-mj-ebZ" secondAttribute="leading" id="hx0-xf-xwQ"/>
                             <constraint firstItem="UoR-lS-tlE" firstAttribute="leading" secondItem="Arm-mj-ebZ" secondAttribute="leading" id="jH4-aV-Qg6"/>
                             <constraint firstItem="UoR-lS-tlE" firstAttribute="top" secondItem="Arm-mj-ebZ" secondAttribute="topMargin" constant="2" id="jkq-J0-N9q"/>
@@ -495,7 +496,6 @@
                             <constraint firstItem="qf6-vS-QPe" firstAttribute="top" secondItem="UoR-lS-tlE" secondAttribute="bottom" constant="20" id="uau-lY-2vV"/>
                             <constraint firstAttribute="trailing" secondItem="E61-bM-6tA" secondAttribute="trailing" id="v7h-Ds-b5c"/>
                             <constraint firstAttribute="trailing" secondItem="UoR-lS-tlE" secondAttribute="trailing" id="v8F-ON-en1"/>
-                            <constraint firstItem="XOA-D0-4fd" firstAttribute="top" secondItem="E61-bM-6tA" secondAttribute="bottom" constant="8" id="vRN-qP-86S"/>
                             <constraint firstItem="qf6-vS-QPe" firstAttribute="top" secondItem="UoR-lS-tlE" secondAttribute="bottom" constant="20" id="weJ-XF-MIr"/>
                         </constraints>
                         <variation key="default">
@@ -528,18 +528,18 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="attackLbl" destination="vjz-e8-LN0" id="MzT-Cm-ojF"/>
-                        <outlet property="currentEvoImg" destination="u0J-40-FVT" id="klv-pQ-aJ4"/>
+                        <outlet property="attackLbl" destination="u5B-LV-9Hw" id="C0K-qs-N3l"/>
+                        <outlet property="currentEvoImg" destination="6Dk-IT-X3D" id="t1V-ZJ-t52"/>
                         <outlet property="defenseLbl" destination="Wbt-79-AU4" id="ioU-fs-Lsc"/>
                         <outlet property="descriptionLbl" destination="Xva-dC-xaz" id="fTF-Lz-VQr"/>
                         <outlet property="evoLbl" destination="qdX-5u-MVE" id="HgG-Yo-4X3"/>
-                        <outlet property="heightLbl" destination="vjz-e8-LN0" id="3Ko-rx-zYv"/>
+                        <outlet property="heightLbl" destination="9cU-Fp-RLY" id="rnB-jx-r3Z"/>
                         <outlet property="mainImg" destination="u0J-40-FVT" id="GhK-TH-26Q"/>
                         <outlet property="nameLbl" destination="Fij-9t-UJc" id="V2K-2b-KDU"/>
                         <outlet property="nextEvoImg" destination="4IP-rd-VNp" id="Sh6-st-1l9"/>
-                        <outlet property="pokedexLbl" destination="vjz-e8-LN0" id="r5h-zB-OhO"/>
+                        <outlet property="pokedexLbl" destination="XsI-gl-kNW" id="s9g-vb-08b"/>
                         <outlet property="typeLbl" destination="RcX-B1-ciI" id="T9W-Lh-zAy"/>
-                        <outlet property="weightLbl" destination="vjz-e8-LN0" id="b4k-5m-KX7"/>
+                        <outlet property="weightLbl" destination="2rJ-cR-p5k" id="4BF-8W-TGj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Sp-DT-0Rc" userLabel="First Responder" sceneMemberID="firstResponder"/>

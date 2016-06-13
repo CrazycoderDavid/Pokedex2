@@ -18,7 +18,7 @@ class Pokemon {
     private var _height: String!
     private var _weight: String!
     private var _attack: String!
-    private var _nextEvolutionText: String!
+    private var _nextEvolutionTxt: String!
     private var _pokemonUrl:String!
     private var _nextEvolutionID: String!
     private var _nextEvolutionLvl: String!
@@ -38,11 +38,11 @@ class Pokemon {
         return _nextEvolutionID
     }
     
-    var nextEvolutionText: String {
-        if _nextEvolutionText == nil {
-            _nextEvolutionText = ""
+    var nextEvolutionTxt: String {
+        if _nextEvolutionTxt == nil {
+            _nextEvolutionTxt = ""
         }
-        return _nextEvolutionText
+        return _nextEvolutionTxt
     }
     
     var weight: String {
@@ -155,29 +155,29 @@ class Pokemon {
                     }
                     print(self._type)
                 
-//                if let descArr = dict["descriptions"] as? [Dictionary<String, String>] where descArr.count > 0 {
-//                    
-//                    if let url = descArr[0] ["resource_uri"] {
-//                        let nsurl = NSURL(string: "\(URL_BASE)\(url)")!
-//                        Alamofire.request(.GET, nsurl).responseJSON { response in
-//                            
-//                            let desResult = response.result
-//                            if let descDict = desResult.value as? Dictionary<String, AnyObject> {
-//                                
-//                                if let description = descDict["description"] as? String {
-//                                    self._description = description
-//                                    print(self._description)
-//                                }
-//                            }
-//                            completed()
-//                            
-//                        }
-//                        
-//                    }
-//                    
-//                    } else {
-//                        self._description = ""
-                   // }
+                if let descArr = dict["descriptions"] as? [Dictionary<String, String>] where descArr.count > 0 {
+                    
+                    if let url = descArr[0] ["resource_uri"] {
+                        let nsurl = NSURL(string: "\(URL_BASE)\(url)")!
+                        Alamofire.request(.GET, nsurl).responseJSON { response in
+                            
+                            let desResult = response.result
+                            if let descDict = desResult.value as? Dictionary<String, AnyObject> {
+                                
+                                if let description = descDict["description"] as? String {
+                                    self._description = description
+                                    print(self._description)
+                                }
+                            }
+                            completed()
+                            
+                        }
+                        
+                    }
+                    
+                    } else {
+                        self._description = ""
+                    }
                
                 if let evolutions = dict["evolutions"] as? [Dictionary<String,AnyObject>] where
                     evolutions.count > 0 {
@@ -191,14 +191,14 @@ class Pokemon {
                                 let num = newStr.stringByReplacingOccurrencesOfString("/", withString: "")
                                 
                                 self._nextEvolutionID = num
-                                self._nextEvolutionText = to
+                                self._nextEvolutionTxt = to
                                 
                                 if let lvl = evolutions[0] ["level"] as? Int {
                                     self._nextEvolutionLvl = "\(lvl)"
                                 } else {
                                     self._nextEvolutionLvl = ""
                                 }
-                                print(self._nextEvolutionText)
+                                print(self._nextEvolutionTxt)
                                 print(self._nextEvolutionLvl)
                                 print(self._nextEvolutionID)
                             }
